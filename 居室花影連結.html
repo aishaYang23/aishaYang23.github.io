@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />	
+    <title>金陵十二金釵</title>
+    <style>
+          @font-face{font-family:思源;src:url("font/思源宋體-SemiBold.otf")}
+          @font-face{font-family:芫荽;src:url("font/芫荽-Regular.ttf")}
+          @font-face{font-family:華康;src:url("font/華康少女文字.ttf")}
+
+          .popup{  
+	position: fixed;
+ 	top: 0;
+	bottom: 0;
+	left: 0;
+ 	right: 0;
+ 	background: rgba(0,0,0,0.8);
+  	transition: opacity 200ms;
+  	visibility: hidden;
+  	opacity: 0;
+		.popupcontent{
+    			position: relative;
+			top: 1000px;
+			margin: auto;
+			height:100px;
+			width: 240px;
+			background: #b4b5b3;
+			border: solid 3px #949593;
+			border-radius: 5px;
+			color:#444543;
+			text-align: center;
+		}
+		.cancel {
+	    		position: fixed;
+	    		width: 100%;
+    			height: 100%;
+    			cursor: default;
+		}
+ 		&:target {
+    			visibility: visible;
+    			opacity: 0.9;
+		}
+	}
+          .img1{
+	width: 350px; 
+	display: block;
+	margin: auto;
+	border: 6px #BC8D73 groove;
+	}
+          .font1{
+	font-size: 35px;
+	padding: 0.5em;
+	color: #B97687;
+	font-family: "思源";
+	}
+          .p1{
+	text-indent: 2em;
+	font-family: "標楷體";
+	padding: 0em 1em 1em 1em;
+	}
+         .ul1{
+	font-size: 16px;
+	color: #B97687;
+	font-family: "芫荽";
+	}
+         .ol2{
+	float: left;
+	type: lower-roman;
+	}
+         .ol2 li{
+	font-size: 14px;
+	font-family:"標楷體";
+	display: inline;
+	type: lower-roman;
+	width: 150px;
+	float: left;
+	height: 25px;
+	}
+         .ol2 li: hover{
+	color: antiquewhite;
+	}
+
+
+    </style>
+</head>
+
+<body>
+          <font class="font1">紅樓夢中的園林</font>
+          <p class="p1">
+	大觀園為《紅樓夢》中一處虛構的園林，即賈府大花園。賈府位於帝都的西城，由寧國公賈演、榮國公賈源兄弟分置寧、榮二府。兩府占據街道北側地段，寧府在東，榮府在西，兩府原以小巷間隔。榮府長女賈元春被選進宮冊封為賢德妃後不久，皇帝允許妃嬪回家省親，兩府逐籌劃為其建省親別墅。元春題其園之總名曰“大觀園”，正殿匾額雲“顧恩思義”。元春省親後，元春命寶玉和諸釵入園居住。
+          </p>
+          <div><img class="img1" src="img/大觀園.jpg"></div>
+          <ul class="ul1" type=disc>
+	<li>大觀園之景觀</li>
+          </ul>
+          <ol>
+	<ol  class="ol2" style="list-style-type: lower-roman;">
+		<li>曲徑通幽</li>
+		<li>蜂腰橋</li>
+		<li>怡紅院</li>
+		<li>芍藥欄</li>
+		<li>沁芳亭</li>
+		<li>翠煙橋</li>
+		<li>瀟湘館</li>
+		<li>滴翠亭</li>
+		<li>秋爽齋</li>
+		<li>稻香村</li>
+		<li>蘆雪庵</li>
+		<li>藕香榭</li>
+		<li>荇葉渚</li>
+		<li>蓼風軒</li>
+		<li>綴錦樓</li>
+		<li>蓼漵</li>
+		<li>蘅蕪苑</li>
+		<li>大觀樓</li>
+		<li>綴錦閣</li>
+		<li>含芳閣</li>
+		<li>嘉蔭堂</li>
+		<li>凸碧山莊</li>
+		<li>凹晶溪館</li>
+		<li>沁芳閘</li>
+		<li>沁芳閘橋</li>
+		<li>隴翠庵</li>
+		<li>梨香院</li>
+	</ol>
+          </ol>
+
+<div>
+&emsp;
+<ul class="ul1" type=disc><li>園內居室之謎</li></ul>
+	<div class="button"><a class="footera" href="#popup">
+		<p>click here</a></p>
+		</div>
+		<div id="popup" class="popup">
+			 <a class="cancel" href="#"></a>		
+			<div class="popupcontent">
+				<h3>彈跳視窗示範</h3>
+				<p>點框框外面可以跳離視窗</p>
+	</div></div>
+
+	<div class="button"><a class="footera" href="#popup">
+		<img class="img1" src="img/大觀園.jpg">
+		</div>
+		<div id="popup" class="popup">
+			 <a class="cancel" href="#"></a>		
+			<div class="popupcontent">
+				<h3>彈跳視窗示範</h3>
+				<p>點框框外面可以跳離視窗</p>
+	</div></div>
+
+</div>
+</body>
+
+
+</html>
