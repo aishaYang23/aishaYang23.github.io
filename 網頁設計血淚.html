@@ -5,17 +5,277 @@
     <meta charset="UTF-8" />	
     <title>網頁設計血淚</title>
     <style> 
+          @font-face{font-family:思源;src:url("font/思源宋體-SemiBold.otf")}
+          @font-face{font-family:芫荽;src:url("font/芫荽-Regular.ttf")}
+          @font-face{font-family:華康;src:url("font/華康少女文字.woff")}
+          @font-face{font-family:莫大;src:url("font/莫大毛筆字體-Medium.ttf")}
+
+	.popup{  
+		z-index: 6;
+		font-family: "標楷體";
+		position: fixed;
+ 		top: 0;
+ 		bottom: 0;
+  		left: 0;
+ 	 	right: 0;
+  		background: rgba(0,0,0,0.8);
+  		transition: opacity 200ms;
+  		visibility: hidden;
+  		opacity: 0;
+		.popupcontent{
+    			position: relative;
+			top:2600px;
+			margin: auto;
+			height:100px; 
+			width: 240px;
+			background: #b4b5b3;
+			border: solid 3px #949593;
+			border-radius: 5px;
+			color:#444543;
+			text-align: center;
+		}
+		.cancel {
+	    		position: fixed;
+	    		width: 100%;
+    			height: 100%;
+    			cursor: default;
+		}
+ 		&:target {
+    			visibility: visible;
+    			opacity: 1;
+		}
+	}
+
+
+          .img2{
+	height: 220px; 
+	border: 6px #BC8D73 groove;
+	border-radius:3px;
+	}
+          .font1{
+	font-size: 40px;
+	padding: 0.5em;
+	color: #B97687;
+	font-family: "芫荽";
+	}
+          .font2{
+	font-size: 16px;
+	color: #BC8D73;
+	font-family: "芫荽";
+	float: right;
+	}
+         .font3{
+	font-size: 26px;
+	color: #B97687;
+	font-family: "華康";
+	}
+         li{
+	font-family: "莫大";
+	font-size: 20px;
+	color: #BC8D73;
+	}
+          .p1{
+	text-indent: 2em;
+	font-family: "標楷體";
+	padding: 0.5em 4em 1em 0em;
+	margin: 0.25em;
+	}
+          .p2{
+	text-indent: 2em;
+	font-family: "華康";
+	padding: 0.5em 4em 1em 0em;
+	margin: 0.25em;
+	}
+          a{
+	color: #9873B9;
+	}
+          a:hover{
+	color: #d1b8c5;
+	cursor: help;
+	font-size: 18px;
+	}
+          a:active{
+	color: purple;
+	cursor: help;
+	font-size: 18px;
+	}
+           .card {
+ 	background-color: #CB8A90;
+  	border-radius:8px;
+  	border: 0.5px;
+  	padding: 4px;
+	width: 152px;
+	}
+            .card .pic img {
+  	width: 152px;
+	height: 105px;
+	}
+           .card .card-header{
+  	border-bottom:none;
+  	background-color: #b7756c;
+	font-family: "標楷體"; 
+	color: #b7756c;
+	border-radius:2px;
+	transition: 
+		color 1.5s;
+	}
+           .card .card-header:hover{
+  	border-bottom:none;
+  	background-color: #b7756c;
+	font-family: "標楷體"; 
+	color: white;
+	
+	}
+           .box1{
+	position: absolute;
+	text-align:center;
+	font-family: "標楷體";
+	color: transparent;
+	transition: 
+		color 0.5s 1s, background 1s;
+	}
+           .box1:hover{
+	position: absolute;
+	text-align:center;
+	font-family: "標楷體";
+	background-color:#FCE9DA;
+	color: #b7756c;
+	}
+           .z{
+	z-index: 0;
+	}
+           .center{
+	padding: 2px 100px 1px 170px;
+	}
 
     </style>
 </head>
 
 
 <body>
-
-
+<font class="font1"><center>一路走來的辛酸血淚</center> </font>
+<br><br>
+          <b class="font3">
+	&emsp;&emsp;壹、登高必自卑，行遠必自邇
+          </b>
+<br>
+          <font class="font2">
+	~網頁骨架之建立~&emsp;&emsp;
+          </font><br>
+          <ol><ol><ol type="i">
+	<li>建構iframe</li>
+		<p class="p1">要將子網頁都放入主網頁，首先，我先設立一個<font style="font-family: Times New Roman;">iframe</font>目標與位址，將子網頁連結顯示區都導引到所創立的框架中。
+		</p>
+	<p><li>目錄製作</li>
+		<p class="p1">架設完畢子網頁所顯示的目標區域後，接下來的大工程是目錄<b style="font-family: Times New Roman;">navigation</b>的製作，使點擊區塊後可產生網頁顯現的效果。此外，我也使用了<b style="font-family: Times New Roman;">hover & focus</b>的程式語言，使讀者在使用目錄時，會因滑鼠游標的位置以及所點網頁的不同，而使目錄文字型態有所不同，使讀者可以知道目前所處網頁為何。
+		</p>
+	<p><li>網頁配色</li>
+		<p class="p1">在設計網頁的過程中，配色也是非常重要且耗時費神的步驟之一，要將畫面配置的和諧且舒適實在不容易。在這次的網頁中，我所使用的主要是以紅色與粉紅色為主題，背景、文字、特效與超連結顏色主要如下：<b style="font-family: Times New Roman; color: #d1b8c5;">#d1b8c5</b>，<b style="font-family: Times New Roman; color: #b7756c;">#b7756c</b>，<b style="font-family: Times New Roman; color: #E5BFBC;">#E5BFBC</b>，<b style="font-family: Times New Roman; color: #CB8A90;">#CB8A90</b>，<b style="font-family: Times New Roman; color: #BC8D73;">#BC8D73</b>，<b style="font-family: Times New Roman; color: #FCE9DA; text-shadow: -2px 3px 15px black">#FCE9DA</b>，<b style="font-family: Times New Roman; color: #9873B9;">#9873B9</b>。
+		</p>
+	<p><li>架設網站</li>
+		<p class="p1">期待老師5/28的詳細解說！！
+		</p>
+          </ol></ol></ol>
+<br>
+          <b class="font3">
+	&emsp;&emsp;貳、不經一番寒徹骨，焉得梅花撲鼻香
+          </b>
+<br>
+          <font class="font2">
+	~製作困難的克服~&emsp;&emsp;
+          </font><br>
+          <ol><ol><ol type="i">
+	<li>中文字體的繕打</li>
+		<p class="p1">起初，剛將網路上的簡單模板下載下來，準備製作網頁的設計時，還沒開始，就遇到了第一個大難題。那便是無論如何都<b>無法將中文字體顯示在頁面上</b>。一開始，我以為是字型設定的原因，因此將所有字體都改成中文字體，像是標楷體、華康少女體......等。然而，這一切的努力都毫無效果，因此便只好上網查詢解決方針。或許是因為第一次從頭到尾獨自利用程式語言設計網頁的關係，抑或是網路資訊太過繁雜，投靠古歌大神仍不見效。幸運地，有一群一同修課的好朋友٩(๑>◡<๑)۶，如及時雨解決了我的煩惱，原來是要在程式語言中打上：<b style="font-family:Times New Roman;">&lt;meta charset="utf-8"/&gt;</b>這段程式碼，便可使中文字乖乖地顯示出來了。
+		</p>
+	<p><li>iframe大小調整</li>
+		<p class="p1">本網站之設立為多個子網頁，依照游標點擊，分別顯示於網站上所建立的<font style="font-family:Times New Roman;">iframe</font>中。然而，每個子網頁的大小與長度並不相同，甚至差異頗大，因此有了希望<b><font style="font-family:Times New Roman;">iframe</font></b>可以依照不同子網站的大小，<b>自動調整相對應大小</b>的念頭。不過，經過多方嘗試，網路上的各種方法似乎都無法達到預期的效果，此外，思及網頁中的留白，似乎也別是一種設計，因此最終就放下了這樣的執著，未再繼續找尋這個問題的解方了。
+		</p>
+	<p><li>github的嘗試</li>
+		<p class="p1">建立完畢所有網站內容後，接下來就是要將網站發布公開，如此一來，大家都能在沒有程式語言檔案的情況下瀏覽網頁，解決了檔案太多太大的問題。因此，藉由網路上的兩段創建網頁的影片：<a href="https://www.youtube.com/watch?v=Zd5jSDRjWfA" target="_blank">看完就懂GitHub & git</a>、<a href="https://www.youtube.com/watch?v=py3n6gF5Y00" target="_blank">GitHub基本教學--從無到有</a>，以及同學的幫助與討論，我嘗試了<b>自行創建網站</b>，利用網路上已架設好的網域，將自己的資料與檔案放入其中，如此一來便能獲取網頁連結，供所有人閱覽。此外，我也從中學到了幾個有趣的程式語言：<font style="font-family:Times New Roman;">git add. & git commit-m "COMMENT" & git push & git status</font>的使用方式。雖然最中得知並非以這種方法進行網站架設，不過仍然是個有趣的體驗與嘗試。
+		</p>
+	<p><li>網頁預設值的改寫</li>
+		<p class="p1">起先，我要更改範例網頁中預設值的<font style="font-family:Times New Roman;">footer</font>顏色時，一直找不到方向，更改任何顏色也全無效果<font style="font-family:Times New Roman;">(⋟﹏⋞)</font>。後來才發現，原來預設的背景是圖片，怪不得無法做出改變，找出了根本原因後，最中便很順利地解決了版面配色的問題。
+		</p>
+	<p><li>並列排版的困境</li>
+		<p class="p1">起先，在進行照片排版時，不知如何將數張<b>圖片</b>進行<b>並排</b>，使用<font style="font-family:Times New Roman;">center or float</font>都仍然無法達到想要的效果。就在不知究竟該如何是好時，我學到了一項方便好用的工具，亦即<font style="font-family:Times New Roman;">display: flex</font>，他可以使圖片自由地排列，依照預期的格式進行變動。
+		</p>
+	<p><li>表格製作</li>
+		<p class="p1">雖然老師上課時，已將表格的製作講解地非常詳細，然而，要親自從零打出一份完整的表格仍使我耗費了不少心力，尤其在跨欄標題與<font style="font-family:Times New Roman;">rowspan & colspan</font>的使用上，有些複雜，然而成功研究完畢後，不但受益良多，同時也獲得滿滿的成就感。
+		</p>
+	<p><li>圖層問題</li>
+		<p class="p1">在製作彈跳視窗與圖片動畫時，我遇到了另一個問題，那便是彈跳視窗跳出後的框框外黑屏，竟然會部分無法遮住照片動畫。這時候我才發現，原來網頁中圖層也是有<b>前後順序</b>的呢！誰在前面，誰在後面決定了是否會互相覆蓋，或是特效是否會互相影響。因此，藉由這次困境，我又學會了一項新的好工具，那便是<b style="font-family:Times New Roman;">z-index</b>的程式語言用法，可利用此語言進行順序的排列，解決遮蔽的問題~！
+		</p>
+          </ol></ol></ol>
+<br>
+          <b class="font3">
+	&emsp;&emsp;參、看來豈是尋常色，濃淡由他冰雪中
+          </b>
+<br>
+          <font class="font2">
+	~特殊效果的創建~&emsp;&emsp;
+          </font><br>
+          <ol><ol><ol type="i">
+	<li>配對猜謎遊戲</li>
+		<p class="p1">在金陵十二金釵的頁面中，特別設計了花與十二金釵的對應小遊戲，利用游標移動到照片，也就是<b style="font-family:Times New Roman">hover</b>的指令，改變照片的透明度，使照片消失並且使文字方塊顯現，使人們得以一窺各花真實芳名為何。此外，個照片下也設有文字區塊，當游標移動到此區塊時，區塊中的文字會改變顏色，並且與背景顏色相異，使其顯現與花對應的人物角色為何。如下圖範例所示：
+		</p>
+	<div class="center">
+	<div class="card">
+              <div class="pic">
+	<div class="box1">
+	&emsp;<p>&emsp;&emsp;&emsp;T W I C E&emsp;&emsp;<p>&emsp;
+	</div>
+                    <img src="img/周子瑜.jpg">
+              </div>
+              <div class="card-header">
+	 周子瑜
+              </div>
+         </div>
+</div>
+<br>
+	<p><li>彈跳視窗</li>
+		<p class="p1">在居室與花影連結的頁面中，將大觀園內的居室照片皆做成<b>點擊後</b>，即可<b>跳出</b>該居室照片的名字、主人以及更進一步的詳細解說。此外，而若想<b>關閉</b>彈出的視窗，只須<b>輕觸文字框框外</b>的灰色區域即可回到原先畫面，進行下一個居室的瀏覽。如下之按鈕所示：
+			<div class="button">
+				<a class="footera" href="#popup" style="font-family:標楷體"><font class="center">我是彈跳視窗按鈕ヾ(^∀^)ﾉ</font></a>
+			</div>
+			<div id="popup" class="popup">
+			 <a class="cancel" href="#"></a>		
+			<div class="popupcontent">
+				<h3>彈跳視窗示範喲</h3>
+				<p>點擊框框外面可以跳離視窗</p>
+	</div></div>
+		<p><br>
+	<p><li>動畫特效</li>
+		<p class="p1">於紅樓詩詞欣賞中，每篇詩詞間皆有音符動畫將之分隔，使畫面更加活潑。此音符動畫是使用<b style="font-family:Times New Roman">marquee</b>之程式語言撰寫而成，結合<b style="font-family:Times New Roman">alternate</b>的格式，使其可於畫面中來回移動。此外，由於該照片ㄧ開始之背景顏色為白色，然而為了使圖示之移動更加和諧，因此有將此照片進行了<b>後製的加工作業</b>，為其塗上與背景相同的色彩。如下圖所示：
+		</p>
+		<marquee width=550 height=30 direction=left behavior=alternate  vspace=10 scrolldelay=500  scrollamount=40"> 
+			<img class="z" height=30 src="img/音符.jpg">&emsp;<img height=30 src="img/音符.jpg">&emsp;<img height=30 src="img/音符.jpg">&emsp;<img height=30 src="img/音符.jpg">&emsp;<img height=30 src="img/音符.jpg">&emsp;<img height=30 src="img/音符.jpg">&emsp;<img height=30 src="img/音符.jpg">
+		</marquee>
+	<p><li>圖片輪播</li>
+		<p class="p1">在網頁一點進來的首頁畫面中，使用了<b style="font-family:Times New Roman">jQuery</b>進行<b>圖片輪播</b>的特效，瀏覽者可使各照片自動撥放，也可自行點擊轉換按鈕，依照自己的步調進行觀賞，雖然製作過程花費了不少心血研究，不過最終效果十分有趣可愛，值得歡喜。
+		</p>
+          </ol></ol></ol>
+<br>
+          <b class="font3">
+	&emsp;&emsp;肆、新竹高於舊竹枝，全憑老幹為扶持
+          </b>
+<br>
+          <font class="font2">
+	~多虧這些朋友的幫助~&emsp;&emsp;
+          </font><br>
+          <ol><ol><ol type="i">
+	<li><ruby>雨<rt>ㄩˇ</rt></ruby>細風輕衣不濕，<ruby>潔<rt>ㄐㄧㄝˊ</rt></ruby>草岸堤獨自羞</li>
+		<p class="p2">嘿嘿！(ෆ` ˘ `ෆ)♡謝謝他在我剛開始創建網頁，尚處於懵懵懂懂的狀態時，幫了我好多，引我入門，使我能順利開啟網頁設計的旅程！而且他的網頁好漂亮呢！能一同修課實在太幸福了~！
+		</p>
+	<p><li><ruby>愛<rt>ㄞˋ</rt></ruby>人何處尋，<ruby>立<rt>ㄌㄧˋ</rt></ruby>久聞松子</li>
+		<p class="p2">哈哈哈！:ஐ٩(๑`ᵕ`)۶ஐ:謝謝他教了我好多好多特效，解決了我好多的笨問題xdd，而且也激發了我不少靈感！同時，和我一起水深火熱地生產網頁！！能一同努力實在太幸福了~！
+		</p>
+	<p><li><ruby>明<rt>ㄇㄧㄥˊ</rt></ruby>月滿前川，<ruby>瀚<rt>ㄏㄢˋ</rt></ruby>海平連地</li>
+		<p class="p2">啊啊~~٩(๑`₃`)۶謝謝他一直一直地陪伴，還有內容上的指點與幫助！能有他陪伴我一起製作網頁設計十分幸運呢~~
+		</p>
+          </ol></ol></ol>
 
 
 </body>
-
 
 </html>

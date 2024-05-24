@@ -6,10 +6,10 @@
     <style>
           @font-face{font-family:思源;src:url("font/思源宋體-SemiBold.otf")}
           @font-face{font-family:芫荽;src:url("font/芫荽-Regular.ttf")}
-          @font-face{font-family:華康;src:url("font/華康少女文字.ttf")}
+          @font-face{font-family:華康;src:url("font/華康少女文字.woff")}
 
           .popup{  
-	position: fixed;
+	position: absolute;
  	top: 0;
 	bottom: 0;
 	left: 0;
@@ -20,10 +20,10 @@
   	opacity: 0;
 		.popupcontent{
     			position: relative;
-			top: 1000px;
+			top: 900px;
 			margin: auto;
-			height:100px;
-			width: 240px;
+			height: 480px;
+			width: 590px;
 			background: #b4b5b3;
 			border: solid 3px #949593;
 			border-radius: 5px;
@@ -38,8 +38,115 @@
 		}
  		&:target {
     			visibility: visible;
-    			opacity: 0.9;
+    			opacity: 0.97;
 		}
+	}
+
+          .popup2{  
+	position: absolute;
+ 	top: 0;
+	bottom: 0;
+	left: 0;
+ 	right: 0;
+ 	background: rgba(0,0,0,0.8);
+  	transition: opacity 200ms;
+  	visibility: hidden;
+  	opacity: 0;
+		.popup2content{
+    			position: relative;
+			top: 1100px;
+			margin: auto;
+			height: 480px;
+			width: 590px;
+			background: #b4b5b3;
+			border: solid 3px #949593;
+			border-radius: 5px;
+			color:#444543;
+			text-align: center;
+		}
+		.cancel {
+	    		position: fixed;
+	    		width: 100%;
+    			height: 100%;
+    			cursor: default;
+		}
+ 		&:target {
+    			visibility: visible;
+    			opacity: 0.97;
+		}
+	}
+
+          .popup3{  
+	position: absolute;
+ 	top: 0;
+	bottom: 0;
+	left: 0;
+ 	right: 0;
+ 	background: rgba(0,0,0,0.8);
+  	transition: opacity 200ms;
+  	visibility: hidden;
+  	opacity: 0;
+		.popup3content{
+    			position: relative;
+			top: 1300px;
+			margin: auto;
+			height: 480px;
+			width: 590px;
+			background: #b4b5b3;
+			border: solid 3px #949593;
+			border-radius: 5px;
+			color:#444543;
+			text-align: center;
+		}
+		.cancel {
+	    		position: fixed;
+	    		width: 100%;
+    			height: 100%;
+    			cursor: default;
+		}
+ 		&:target {
+    			visibility: visible;
+    			opacity: 0.97;
+		}
+	}
+
+
+          .popup4{  
+	position: absolute;
+ 	top: 0;
+	bottom: 0;
+	left: 0;
+ 	right: 0;
+ 	background: rgba(0,0,0,0.8);
+  	transition: opacity 200ms;
+  	visibility: hidden;
+  	opacity: 0;
+		.popup4content{
+    			position: relative;
+			top: 1500px;
+			margin: auto;
+			height: 480px;
+			width: 590px;
+			background: #b4b5b3;
+			border: solid 3px #949593;
+			border-radius: 5px;
+			color:#444543;
+			text-align: center;
+		}
+		.cancel {
+	    		position: fixed;
+	    		width: 100%;
+    			height: 100%;
+    			cursor: default;
+		}
+ 		&:target {
+    			visibility: visible;
+    			opacity: 0.97;
+		}
+	}
+
+           .flex{
+	display: flex;
 	}
           .img1{
 	width: 350px; 
@@ -47,11 +154,27 @@
 	margin: auto;
 	border: 6px #BC8D73 groove;
 	}
+          .img2{
+	height: 220px; 
+	border: 6px #BC8D73 groove;
+	border-radius:3px;
+	}
+          .img3{
+	height: 196px; 
+	border: 6px #BC8D73 groove;
+	border-radius:3px;
+	}
           .font1{
-	font-size: 35px;
-	padding: 0.5em;
+	font-size: 40px;
+	padding: 0.25em;
 	color: #B97687;
-	font-family: "思源";
+	font-family: "芫荽";
+	}
+          .font2{
+	font-size: 18px;
+	float: right;
+	color: #BC8D73;
+	font-family: "華康";
 	}
           .p1{
 	text-indent: 2em;
@@ -85,7 +208,8 @@
 </head>
 
 <body>
-          <font class="font1">紅樓夢中的園林</font>
+          &emsp;
+          <font class="font1"><center>紅樓夢中的園林</center></font>
           <p class="p1">
 	大觀園為《紅樓夢》中一處虛構的園林，即賈府大花園。賈府位於帝都的西城，由寧國公賈演、榮國公賈源兄弟分置寧、榮二府。兩府占據街道北側地段，寧府在東，榮府在西，兩府原以小巷間隔。榮府長女賈元春被選進宮冊封為賢德妃後不久，皇帝允許妃嬪回家省親，兩府逐籌劃為其建省親別墅。元春題其園之總名曰“大觀園”，正殿匾額雲“顧恩思義”。元春省親後，元春命寶玉和諸釵入園居住。
           </p>
@@ -97,58 +221,216 @@
 	<ol  class="ol2" style="list-style-type: lower-roman;">
 		<li>曲徑通幽</li>
 		<li>蜂腰橋</li>
-		<li>怡紅院</li>
+		<li style="color: #BC8D73;">怡紅院</li>
 		<li>芍藥欄</li>
 		<li>沁芳亭</li>
 		<li>翠煙橋</li>
-		<li>瀟湘館</li>
+		<li style="color: #BC8D73;">瀟湘館</li>
 		<li>滴翠亭</li>
-		<li>秋爽齋</li>
-		<li>稻香村</li>
-		<li>蘆雪庵</li>
+		<li style="color: #BC8D73;">秋爽齋</li>
+		<li style="color: #BC8D73;">稻香村</li>
+		<li style="color: #BC8D73;">蘆雪庵</li>
 		<li>藕香榭</li>
 		<li>荇葉渚</li>
 		<li>蓼風軒</li>
-		<li>綴錦樓</li>
+		<li style="color: #BC8D73;">綴錦樓</li>
 		<li>蓼漵</li>
-		<li>蘅蕪苑</li>
-		<li>大觀樓</li>
-		<li>綴錦閣</li>
+		<li style="color: #BC8D73;">蘅蕪苑</li>
+		<li style="color: #BC8D73;">大觀樓</li>
+		<li style="color: #BC8D73;">暖香塢</li>
 		<li>含芳閣</li>
 		<li>嘉蔭堂</li>
 		<li>凸碧山莊</li>
 		<li>凹晶溪館</li>
 		<li>沁芳閘</li>
 		<li>沁芳閘橋</li>
-		<li>隴翠庵</li>
+		<li style="color: #BC8D73;">櫳翠庵</li>
 		<li>梨香院</li>
 	</ol>
           </ol>
+<font class="font2">&emsp;&emsp;有標記顏色之景點<br>可於下方瀏覽詳細介紹&emsp;</font>
 
-<div>
-&emsp;
+&emsp;  <br> &emsp;  
 <ul class="ul1" type=disc><li>園內居室之謎</li></ul>
-	<div class="button"><a class="footera" href="#popup">
-		<p>click here</a></p>
+<div class="flex">
+&emsp; &emsp;
+	<div class="button"><a class="footera" href="#大觀樓">
+		<img class="img2" src="img/大觀樓.jpg">
+	</div>
+	<div id="大觀樓" class="popup">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popupcontent">
+			<h3 style="font-size: 45px; font-family: 華康">大觀樓</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：顧恩思義</b>
+			<p  style="font-family: 芫荽;">對聯：
+				<br>天地啟宏慈，赤子蒼頭同感戴
+				<br>古今垂曠典，九州萬國被恩榮
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;大觀樓是大觀園的正殿，為賈元春返鄉省親時所命名。「大觀」意指景物的美觀壯盛，也藉由幾位風采不凡的青春兒女們的故事揭示了人們必經的成長歷程。</p>
 		</div>
-		<div id="popup" class="popup">
-			 <a class="cancel" href="#"></a>		
-			<div class="popupcontent">
-				<h3>彈跳視窗示範</h3>
-				<p>點框框外面可以跳離視窗</p>
-	</div></div>
+	</div>
+&emsp;
 
-	<div class="button"><a class="footera" href="#popup">
-		<img class="img1" src="img/大觀園.jpg">
+	<div class="button"><a class="footera" href="#瀟湘館">
+		<img class="img2" src="img/瀟湘館.jpg">
+	</div>
+	<div id="瀟湘館" class="popup">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popupcontent">
+			<h3 style="font-size: 45px; font-family: 華康">瀟湘館</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：有鳳來儀</b>
+			<p  style="font-family: 芫荽;">
+				<br>居住角色：林黛玉
+				<br>院中植物：翠竹、芭蕉
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;由於瀟湘館內多翠竹，「瀟湘館」之名引用了舜的瀟湘二妃的典故。相傳，舜至南方巡視時死於蒼梧。舜之瀟湘二妃前往巡之，因傷心過度而淚染青竹，使竹上生斑，故稱翠竹為「瀟湘竹」。呼應了林黛玉生前為絳珠仙草，此生註定要用淚水向寶玉報答前世的澆灌之恩。而瀟湘館「中間羊腸一條石子漫的路」也呼應了林黛玉細膩幽微的心思。</p>
 		</div>
-		<div id="popup" class="popup">
-			 <a class="cancel" href="#"></a>		
-			<div class="popupcontent">
-				<h3>彈跳視窗示範</h3>
-				<p>點框框外面可以跳離視窗</p>
-	</div></div>
-
+	</div>
 </div>
+
+
+<br>
+<div class="flex">
+
+	<div class="button"><a class="footera" href="#怡紅院">
+		<img class="img3" src="img/怡紅院.jpg">
+	</div>
+	<div id="怡紅院" class="popup2">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup2content">
+			<h3 style="font-size: 45px; font-family: 華康">怡紅院</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：怡紅快綠</b>
+			<p  style="font-family: 芫荽;">
+				<br>居住角色：賈寶玉
+				<br>院內植物：芭蕉、海棠
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;是大觀園中最為華麗、寬敞的房屋之一。《紅樓夢》記錄了賈寶玉如迷宮一般的紅塵之旅，充滿了徬徨尋覓、迂迴探路。而賈寶玉所居住的怡紅院，室內室外的設計均如同迷宮般錯綜複雜。正是呼應了主人翁千迴百轉的成長歷程。</p>
+		</div>
+	</div>
+&emsp;
+	<div class="button"><a class="footera" href="#稻香村">
+		<img class="img3" src="img/稻香村.jpg">
+	</div>
+	<div id="稻香村" class="popup2">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup2content">
+			<h3 style="font-size: 45px; font-family: 華康">稻香村</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：杏簾在望</b>
+			<p  style="font-family: 芫荽;">
+				<br>居住角色：李紈
+				<br>院中植物：紅杏、桑榆之屬
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;稻香村外圍是一帶黃泥築就的矮牆；牆內是數楹茅屋和各色綠色植栽；籬外有一土井和漫然無際的田畝。看似如農家一般樸實無華的稻香村，卻有如噴火蒸霞一般的幾百株紅杏綻放，顯現了李紈內心豐沛的情感，因為年少喪偶而守寡，將自己的心性壓抑在簡樸的生活和行為之下的樣貌。</p>
+		</div>
+	</div>
+&emsp;
+	<div class="button"><a class="footera" href="#暖香塢">
+		<img class="img3" src="img/暖香塢.jpg">
+	</div>
+	<div id="暖香塢" class="popup2">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup2content">
+			<h3 style="font-size: 45px; font-family: 華康">暖香塢</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：穿雲度月</b>
+			<p  style="font-family: 芫荽;">
+				<br>居住角色：惜春
+				<br>暖香塢：惜春日常居住起卧的閨房
+				<br>藕香榭：惜春的畫室，學習之處
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;暖香塢是紅樓夢中大觀園裏的一座建築，是賈四小姐惜春住所。暖香塢在小説的敍述中位於大觀園的西半區，北面是李紈住的稻香村，南邊是薛寶釵的蘅蕪苑。此外，在《紅樓夢》中，有一回目為暖香塢雅制春燈謎，女眷們在此初燈謎，猜燈謎，好不熱鬧。</p>
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="flex">
+
+	<div class="button"><a class="footera" href="#櫳翠庵">
+		<img class="img3" src="img/櫳翠庵.jpg">
+	</div>
+	<div id="櫳翠庵" class="popup3">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup3content">
+			<h3 style="font-size: 45px; font-family: 華康">瀧翠庵</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：苦海慈航</b>
+			<p  style="font-family: 芫荽;">
+				<br>居住角色：妙玉
+				<br>院中植物：紅梅
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;大觀園中的一所尼姑庵，內有山門、東禪堂及耳房。寒冬時，櫳翠庵內有紅梅在雪白的琉璃世界中綻放。暗示了妙玉雖帶髮修行，內心的情感卻無法徹底根除，對於繁華世界仍有一絲絲的留念。</p>
+		</div>
+	</div>
+&emsp;
+	<div class="button"><a class="footera" href="#綴錦樓">
+		<img class="img3" src="img/綴錦樓.jpg">
+	</div>
+	<div id="綴錦樓" class="popup3">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup3content">
+			<h3 style="font-size: 45px; font-family: 華康">綴錦樓</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：蓼汀花漵</b>
+			<p  style="font-family: 芫荽;">
+				<br>住角色：賈迎春
+				<br>院中植物：荷花、菱花、蓼花
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;綴錦樓為紫菱洲旁的其中一處廳房，為賈迎春在園中的住處。也是在海棠詩社中，迎春的別號「菱洲」的由來。綴錦樓就在水域旁邊，因此周圍生滿了水生的荷花、菱花和蓼花，正是匾額「蓼汀花漵」的緣由。此外，綴錦閣空間開闊，是大觀園中經常用來集會宴客的場所。其中的高閣也被用來作為儲藏空間，如：五彩炫耀的圍屏、桌椅、大小花燈之屬。隔水與藕香榭相望，遠遠地在綴錦樓聽樂聲自藕香榭穿花度水而來，令人心曠神怡。</p>
+		</div>
+	</div>
+&emsp;
+	<div class="button"><a class="footera" href="#秋爽齋">
+		<img class="img3" src="img/秋爽齋.jpg">
+	</div>
+	<div id="秋爽齋" class="popup3">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup3content">
+			<h3 style="font-size: 45px; font-family: 華康">秋爽齋</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：桐剪秋風</b>
+			<p  style="font-family: 芫荽;">
+				<br>居住角色：賈探春
+				<br>院中植物：芭蕉、梧桐
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;第三十五回回目：「秋爽齋偶結海棠社」，是海棠詩社創社及集會的地方。由於探春素喜空間闊朗，秋爽齋的三間臥室都是打通的。秋爽齋內有顏真卿的墨跡、各式毛筆及米芾的《煙雨圖》。展現出了賈探春對書畫的喜愛及性格的開朗疏闊。</p>
+		</div>
+	</div>
+</div>
+<br>
+<div class="flex">
+&emsp; &emsp;
+	<div class="button"><a class="footera" href="#蘅蕪苑">
+		<img class="img2" src="img/蘅蕪苑.jpg">
+	</div>
+	<div id="蘅蕪苑" class="popup4">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup4content">
+			<h3 style="font-size: 45px; font-family: 華康">蘅蕪苑</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;">匾額：蘅芷清芬</b>
+			<p  style="font-family: 芫荽;">
+				<br>居住角色：薛寶釵
+				<br>院中植物：各色香草
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;蘅蕪苑離大觀園的正殿不遠，在沁芳池邊，是一處清淨幽雅的處所。院內有各種奇花異草散發著淡淡的幽香；屋內的擺設則是只有幾部書、茶奩茶杯而已。就連床上的青紗帳幔、衾褥也十分簡單樸素。透過蘅蕪院的芳草植物和屋內擺設，可以發現寶釵的端莊穩重、低調清簡。</p>
+		</div>
+	</div>
+&emsp;
+	<div class="button"><a class="footera" href="#蘆雪庵">
+		<img class="img2" src="img/蘆雪庵.jpg">
+	</div>
+	<div id="蘆雪庵" class="popup4">
+	 	<a class="cancel" href="#"></a>		
+		<div class="popup4content">
+			<h3 style="font-size: 45px; font-family: 華康">蘆雪庵</h3>
+			<b style="color: #5B442B; font-family: 標楷體; font-size: 20px;"></b>
+			<p  style="font-family: 芫荽;">
+				<br>
+				<br>
+			</p><p><p>
+			<p style="padding: 10px 70px 0px 70px; font-family: 標楷體;">&emsp;&emsp;蘆雪庵依山傍水，推窗便可垂釣，四周有蘆葦環繞，故名「蘆雪庵」。為第四十九回和第五十回中，大觀園內的兒女們「割腥啖膻」、「賞雪對聯」的發生地點。</p>
+		</div>
+	</div>
+</div>
+
+<font class="font2">&emsp; &emsp; &emsp;點擊圖片<br>即可獲得詳細解說&emsp;</font>
+
 </body>
 
 
